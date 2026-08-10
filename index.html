@@ -1,61 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Christian Jimenez Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/mediaqueries.css">
-    </head>
-    <body>
-        <nav id ='deskstop-nav'>
-            <div class = 'logo'>Christian Jimenez</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Christian Jimenez, Computer Science student and developer.">
+  <title>Christian Jimenez | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation"><a class="logo" href="#home">CJ<span>.</span></a><button
+        class="menu-toggle" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span><span
+          class="sr-only">Toggle navigation</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="hero container" id="home">
+      <div class="reveal">
+        <p class="eyebrow">Computer Science Student / Developer</p>
+        <h1>Hi, I'm <span>Christian Jimenez.</span></h1>
+        <p class="lede">I build thoughtful digital experiences with clean code, curiosity, and attention to the details
+          that make products feel effortless.</p>
+        <div class="button-row"><a class="btn primary" href="#projects">View my work</a><a
+            class="btn secondary" href="assets/Resume26.pdf" target="_blank">Download resume</a></div>
+        <div class="social-row"><a href="https://www.linkedin.com/in/christian-jimenez-770b902a9/" target="_blank"
+            rel="noreferrer"><img src="assets/LinkedIn_icon.png" alt="">LinkedIn</a><a
+            href="https://github.com/Christian-429" target="_blank" rel="noreferrer"><img src="assets/GitHub.png"
+              alt="">GitHub</a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="profile-photo"><img src="assets/Headshot_2026.JPG" alt="Christian Jimenez"></div>
+        <div class="orb rust"></div>
+        <div class="orb teal"></div><span class="availability">Open to opportunities</span>
+      </div>
+    </section>
+    <section class="section container" id="about">
+      <div class="heading reveal">
+        <p class="eyebrow">01 / About me</p>
+        <h2>A little About me</h2>
+      </div>
+      <div class="about-grid">
+        <figure class="about-photo reveal"><img src="assets/profile-Picture.JPG" alt="Christian Jimenez">
+        </figure>
+        <div class="about-copy reveal">
+          <p> I'm a computer science student passionate in learning more about embedded software.
+            I enjoy collaborating, learning new tools, and yeah.
+          </p>
+          <p>When I'm not coding, I'm always looking for something to work on like modding my MP3 player or Improving
+            on my previous projects.
+          </p>
+          <div class="facts">
+            <div><b>Based in</b><span>California, USA</span></div>
+            <div><b>Focus</b><span>Embedded Software</span></div>
+            <div><b>Currently</b><span>Interning at HUMANBULB</span></div>
+            <div><b>Availability</b><span>Open to connect</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section tint" id="projects">
+      <div class="container">
+        <div class="heading reveal">
+          <p class="eyebrow">02 / Selected work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img class="project-image" src="assets/Mandelbrot.png" alt="Mandelbrot fractal visualizer screenshot">
+            <div class="card-copy"><small>01</small>
+              <h3>Mandelbrot</h3>
+              <p>Created an interactive Mandelbrot fractal visualizer that calculates pixel iterations
+                in real time, with smooth zooming and dynamic color changes based on how quickly each pixel
+                escapes the fractal.
+              </p>
+              <ul>
+                <li>C++</li>
+                <li>SFML</li>
+              </ul>
             </div>
-        </nav>
-        <nav id="hamburger-nav">
-             <div class = 'logo'>Christian Jimenez</div>
-             <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-             </div>
-        </nav>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/profile-Picture.JPG" alt="Christian Jimenez profile picture" />
+          </article>
+          <article class="project-card reveal">
+            <img class="project-image teal-bg" src="assets/Tetris.png" alt="Tetris Clone gameplay screenshot">
+            <div class="card-copy"><small>02</small>
+              <h3>Tetris Clone</h3>
+              <p>Recreated Tetris from scratch with custom graphics, sound effects, gameplay mechanics,
+                and a complete end screen for a polished, interactive experience.
+              </p>
+              <ul>
+                <li>C++</li>
+                <li>SFML</li>
+              </ul>
             </div>
-            <div class="section__text">
-                <p class="section__text_p1">Hello I'm</p>
-                <h1 class="title">Christian Jimenez</h1>
-                <p class="section__text_p2">Computer Science Student</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/resume26.pdf')">Download Resume</button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">contact info</button>
-                </div>
-                <div id="social-container">
-                    <img src="./assets/LinkedIn_icon.png" alt="LinkedIn icon" class="icon" onclick="location.href='https://www.linkedin.com/in/christian-jimenez-770b902a9/'" />
-                    <img src="./assets/GitHub.png" alt="GitHub icon" class="icon" onclick="location.href='https://github.com/Christian-429'" />
-                </div>
+          </article>
+          <article class="project-card reveal">
+            <img class="project-image rust-bg" src="assets/Clockin_App.png" alt="Time and Attendance Management System screenshot">
+            <div class="card-copy"><small>03</small>
+              <h3>Time & Attendance Management System</h3>
+              <p>Collaborated with a team of three to develop a full-stack time and attendance management
+                system, streamlining intern clock-ins, hour tracking, scheduling, and absence requests.
+                Contributed to both front-end development and feature testing while helping build tools
+                for intern and administrator workflows.
+              </p>
+              <ul>
+                <li>TypeScript</li>
+                <li>UI/UX</li>
+                <li>React</li>
+              </ul>
             </div>
-        </section>
-        <script src="js/main.js" async defer></script>
-    </body>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="experience">
+      <div class="heading reveal">
+        <p class="eyebrow">03 / Experience</p>
+        <h2>Growing through hands-on work.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <img class="company-logo" src="assets/HUMANBULB.png" alt="HUMANBULB logo">
+          <div>
+            <p class="meta">HUMANBULB <time>June, 2026 - Present</time></p>
+            <h3>Green Careers Launchpad Intern</h3>
+            <ul>
+              <li>Develop an internal clock-in and time-tracking application, contributing to responsive
+                front-end development with React and TypeScript while testing features, debugging issues,
+                and improving intern workflows.</li>
+              <li>Operated and maintained Creality 3D printers to fabricate functional parts and prototypes,
+                while collaborating with fellow interns to plan Youth Night STEM events and support community
+                engagement.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <img class="company-logo" src="assets/ARC.jpg" alt="TRIO Student Support Services logo">
+          <div>
+            <p class="meta">TRIO Student Support Services <time>2024 - 2025</time></p>
+            <h3>Student Ambassador</h3>
+            <ul>
+              <li>Provided technical support to students and staff, troubleshooting software and network issues,
+                supporting office technology, and assisting with academic advising and front-desk operations.</li>
+              <li>Enhanced the TRIO SSS Canvas portal using HTML and CSS, improving navigation
+                and user experience while supporting day-to-day program operations and student services.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section tint" id="education">
+      <div class="container">
+        <div class="heading reveal">
+          <p class="eyebrow">04 / Education and skills</p>
+          <h2>The foundation behind my work.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <img class="school-logo" src="assets/ARC.jpg" />
+            <div><small>Education</small>
+              <h3>Computer Science, A.S.</h3>
+              <p><b>American River College</b><br>Expected graduation: 2027</p>
+              <p>Relevant coursework: Data Structures, Algorithms, Linear Algebra</p>
+            </div>
+          </article>
+          <div class="skills reveal">
+            <h3>Technical skills</h3>
+            <div class="skills-grid">
+              <p><b>Languages</b>C++, Python, JavaScript, TypeScript</p>
+              <p><b>Frameworks</b>React, Node.js, Express</p>
+              <p><b>Tools</b>Git, GitHub, VS Code, Vite</p>
+              <p><b>Technologies</b>Prisma, SFML</p>
+              <p><b>Development</b>Full-Stack Development, Front-End Development</p>
+              <p><b>Practices</b>Responsive UI, Debugging, Testing, Version Control</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="certifications">
+      <div class="heading reveal">
+        <p class="eyebrow">05 / Recognition</p>
+        <h2>Certifications and awards.</h2>
+      </div>
+      <div class="cert-grid">
+        <article class="cert reveal">
+          <div>
+            <h3>Python</h3>
+            <p>freeCodeCamp / 2026</p>
+          </div>
+        </article>
+        <article class="cert reveal">
+          <div>
+            <h3>Google AI Professional</h3>
+            <p>Coursera / 20X6</p>
+          </div>
+        </article>
+        <article class="cert reveal">
+          <div>
+            <h3>GitHub Foundations</h3>
+            <p>DataCamp / 2026</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">06 / Contact</p>
+          <h2>Let's create something meaningful.</h2>
+          <p>Have a role, project, or idea in mind? I'd love to hear from you.</p>
+          <div class="contact-links"><a href="mailto:Jimenezchristian4236@gmail.com">Jimenezchristian4236@gmail.com</a><a
+              href="https://www.linkedin.com/in/christian-jimenez-770b902a9/" target="_blank">LinkedIn</a><a
+              href="https://github.com/Christian-429" target="_blank">GitHub</a><a href="assets/resume26.pdf"
+              target="_blank">Download resume</a></div>
+        </div>
+        <form class="reveal">
+          <div class="form-row"><label>Name<input required name="name" autocomplete="name"></label><label>Email<input
+                required type="email" name="email" autocomplete="email"></label></div><label>Subject<input required
+              name="subject"></label><label>Message<textarea required name="message" rows="5"></textarea></label><button
+            class="btn primary" type="submit">Send message -></button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer"><a class="logo" href="#home">CJ<span>.</span></a>
+      <p>Copyright <span id="year"></span> Christian Jimenez.</p>
+      <div><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
